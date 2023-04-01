@@ -19,7 +19,7 @@ const qtdealz: ConfigsType = {
     phone: "+974 5030 3100",
   },
   product: {
-    currency: "QAR",
+    currency: "AED",
     // prettier-ignore
     cities: ["Ain Khaled", "Al Ruwais", "Dukhan", "Lusail", "Mesaleed", "Ras Laffan", "Um Salal Ali", "Al Khor", "Al Rayyan", "Al Wakrah", "Doha"],
     whatsappShare:
