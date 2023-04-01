@@ -267,7 +267,7 @@ export default function Navbar() {
       </AppBar>
     
       {fixedSearchbar && (
-  <AppBar position="fixed" color="inherit" elevation={0} sx={styles.appbarStyles} style={{position:'fixed'}}>
+  <AppBar position="fixed" color="inherit" elevation={0} sx={styles.appbarStyles} style={{position:'fixed',boxShadow: '0 0 10px #3333336b'}}>
   <Box sx={{ display: { xs: "flex", md: "none" } }} mx={2} py={1.5}>
     <SearchBar />
   </Box>

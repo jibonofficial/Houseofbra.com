@@ -245,8 +245,8 @@ export const NotificationDrawer = ({ open, categoryId, categoryName, toggleDrawe
                           bgcolor={grey[900]}
                           component="div"
                         >
-                          <span style={{color:'#fff'}}>
-                            <span style={{ fontSize: "10px", marginBottom: 5 }}>
+                          <span style={{color:'#fff',display:'flex',alignItems:'center'}}>
+                            <span style={{ fontSize: "10px" }}>
                               {appConfig.product.currency}
                             </span>
                             &nbsp;{" "}
