@@ -82,7 +82,7 @@ export default function Navbar() {
 
   React.useEffect(() => {
     window.addEventListener("scroll", handleScroll, { passive: true });
-
+    setDisplayTopBanner(false)
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };

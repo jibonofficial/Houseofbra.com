@@ -1,4 +1,4 @@
-import { alpha, InputBase } from "@mui/material";
+import { alpha, Backdrop, InputBase } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import SearchIcon from "@mui/icons-material/Search";
 import { grey } from "@mui/material/colors";
@@ -58,7 +58,7 @@ export const SearchBar = () => {
     }
   };
   return (
-    <Search>
+    <Search style={{backgroundColor:'#fff'}}>
       <StyledInputBase placeholder="Search…" onChange={(e) => setSearchValue(e.target.value)} inputProps={{ onKeyDown: handleSearch }} />
       <SearchIconWrapper style={{cursor:'pointer',pointerEvents:'auto'}} onClick={handleSearchFunc}>
         <SearchIcon />

@@ -1,14 +1,14 @@
-import { blueGrey, green, grey, red, yellow } from "@mui/material/colors";
+import { blueGrey, green, grey, pink, red, yellow } from "@mui/material/colors";
 
 export const appColors = {
-  primary: yellow[500],
-  darkPrimary: yellow[600],
+  primary: pink[500],
+  darkPrimary: pink[600],
   darkGrey: "#222222",
   lightGrey: grey[300],
   lightGreyText: "#a4a4a4",
   fontGrey: grey[700],
   blueDarkGrey: blueGrey[900],
-  lighYellow: yellow[200],
+  lighYellow: pink[200],
   white: "#ffffff",
   red: red[900],
   green: green[900],

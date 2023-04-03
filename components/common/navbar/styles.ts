@@ -48,10 +48,7 @@ export const actionNavStyles: muiSxPropType = {
     xs: 1,
     md: 0,
   },
-  background: {
-    xs: appColors.white,
-    md: grey[100],
-  },
+  background: "#000",
 };
 
 export const catNavStyles: muiSxPropType = {

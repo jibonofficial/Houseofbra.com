@@ -34,7 +34,7 @@ input[type="search"]::-webkit-search-cancel-button {
   color: #222222;
 }
 .nav-icon {
-  color: #222222 !important;
+  color: #fff !important;
 }
 .cart-product-image {
   object-fit: cover;
