@@ -1,7 +1,7 @@
 import { blueGrey, green, grey, pink, red, yellow } from "@mui/material/colors";
 
 export const appColors = {
-  primary: pink[500],
+  primary: '#FF63B8',
   darkPrimary: pink[600],
   darkGrey: "#222222",
   lightGrey: grey[300],

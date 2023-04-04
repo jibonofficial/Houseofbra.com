@@ -4,7 +4,7 @@ import { grey, yellow } from "@mui/material/colors";
 import { appColors, appStyles } from "../appColors";
 
 export const YellowButton = styled(Button)<ButtonProps>(() => ({
-  backgroundColor: yellow[500],
+  backgroundColor: '#FF63B8',
   color: appColors.darkGrey,
   border: `1px solid ${appColors.darkGrey}`,
   fontWeight: 700,

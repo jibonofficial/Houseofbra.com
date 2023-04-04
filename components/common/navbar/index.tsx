@@ -73,16 +73,16 @@ export default function Navbar() {
   const handleScroll = () => {
     const position = window.pageYOffset || document.documentElement.scrollTop;
     console.log(position);
-    if(position > 210){
-      setFixedSearchbar(true)
-    }else{
-      setFixedSearchbar(false)
+    if (position > 210) {
+      setFixedSearchbar(true);
+    } else {
+      setFixedSearchbar(false);
     }
   };
 
   React.useEffect(() => {
     window.addEventListener("scroll", handleScroll, { passive: true });
-    setDisplayTopBanner(false)
+    setDisplayTopBanner(false);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -90,13 +90,7 @@ export default function Navbar() {
 
   return (
     <Box sx={styles.navbarStyles} className={displayTopBanner ? "navbar-with-topbanner" : "navbar"}>
-   
-        <AppBar
-        position="fixed"
-        color="inherit"
-        elevation={0}
-        sx={styles.appbarStyles}
-      >
+      <AppBar position="fixed" color="inherit" elevation={0} sx={styles.appbarStyles}>
         {displayTopBanner && (
           <Box sx={styles.topBanner}>
             <Container maxWidth="lg" disableGutters>
@@ -139,7 +133,7 @@ export default function Navbar() {
                   onClick={toggleLeftMenuDrawer(true)}
                   sx={{ pr: 0, pb: 0, pt: 0 }}
                 >
-                  <MenuIcon fontSize="large" />
+                  <MenuIcon fontSize="large" style={{ color: "#fff" }} />
                 </IconButton>
               </Grid2>
               <Grid2 sx={{ display: { xs: "none", md: "block" } }}>
@@ -261,19 +255,44 @@ export default function Navbar() {
             </Grid2>
           </Container>
         </Box>
-        <Box sx={{ display: { xs: "flex", md: "none" } }} mx={2} pb={1}>
+        <Box sx={{ display: { xs: "flex", md: "none" } }} mx={2} mt={0.5} pb={1}>
           <SearchBar />
         </Box>
       </AppBar>
-    
+
       {fixedSearchbar && (
-  <AppBar position="fixed" color="inherit" elevation={0} sx={styles.appbarStyles} style={{position:'fixed',boxShadow: '0 0 10px #3333336b'}}>
-  <Box sx={{ display: { xs: "flex", md: "none" } }} mx={2} py={1.5}>
-    <SearchBar />
-  </Box>
-</AppBar>
-      ) }
-    
+        <AppBar
+          position="fixed"
+          color="inherit"
+          elevation={0}
+          sx={styles.appbarStyles}
+          style={{ position: "fixed", boxShadow: "0 0 10px #3333336b" }}
+        >
+          <Box sx={{ display: { xs: "flex", md: "none" } }} mx={2} py={1.5}>
+            <Box
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                marginRight: "12px",
+              }}
+            >
+              <IconButton
+                size="large"
+                edge="start"
+                color="inherit"
+                aria-label="menu"
+                onClick={toggleLeftMenuDrawer(true)}
+                sx={{ pr: 0, pb: 0, pt: 0 }}
+              >
+                <MenuIcon fontSize="large" />
+              </IconButton>
+            </Box>
+            <SearchBar />
+          </Box>
+        </AppBar>
+      )}
+
       <CartDrawer open={cartDrawerEl} toggleDrawer={toggleCartDrawer} />
       <NavLeftSideMenuDrawer open={anchorLeftMenuEl} toggleDrawer={toggleLeftMenuDrawer} />
     </Box>
