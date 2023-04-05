@@ -204,7 +204,7 @@ export default function ProductsByCat({ title, productsData, loading }: Props) {
                           <Typography variant="body2" sx={styles.prodTitle} noWrap={false}>
                             {item.product_name}
                           </Typography>
-                          <Box component="span" style={{backgroundColor: "#f521ff",color:'#222222'}} sx={styles.saleText}>
+                          <Box component="span" style={{backgroundColor: "transparent",fontSize:"14px",color:'#222222'}} sx={styles.saleText}>
                             View
                           </Box>
                         </Stack>

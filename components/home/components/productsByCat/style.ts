@@ -118,7 +118,7 @@ export const prodDiscountPrice: muiSxPropType = {
 
 export const saleText: muiSxPropType = {
   fontWeight: "bold",
-  backgroundColor: "red",
+  backgroundColor: "#f521ff",
   whiteSpace: "nowrap",
   color: "white",
   px: {
